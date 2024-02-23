@@ -1,0 +1,29 @@
+Congratulations !! You unlocked the first level.
+
+I) Please answer the following questions in a new text document:
+
+    - What is the list of ips present in Infomaniak SPF (*) ?
+
+    - Where can you usually find DNS information on a Linux system ?
+
+    - What is the abuse address of the 185.181.161.0/24 range (*) ?
+
+    - Do you prefer using Vim or Emacs ?
+
+    * please specify how you found the answer
+
+II) Please write a small script that solves the first part:
+
+    - Gather the Candidate Id
+    - Call https://candiharvest.infomanihack.ch with the right Candidate Id
+
+    NB: You can use any of the following languages: Bash, Python, Perl, PHP
+
+III) Upload your answers, script, CV to this URL:
+
+    https://drive.infomaniak.com/app/collaborate/xxxxxxxxxxxxx                                                                                                           39a47b50cf39
+
+Feel free to add any additional document if you want to (cover letter, work cert                                                                                                             ificate...)
+
+If you haven't received any response within 3 weeks or if you have any question                                                                                                              you can reach us at:
+candiharvest[at]infomanihack.ch

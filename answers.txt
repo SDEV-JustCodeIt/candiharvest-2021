@@ -1,0 +1,134 @@
+
+
+  _____                _ _ _                               _   
+  / ____|              | (_) |                             | |  
+ | |     __ _ _ __   __| |_| |__   __ _ _ ____   _____  ___| |_ 
+ | |    / _` | '_ \ / _` | | '_ \ / _` | '__\ \ / / _ \/ __| __|
+ | |___| (_| | | | | (_| | | | | | (_| | |   \ V /  __/\__ \ |_ 
+  \_____\__,_|_| |_|\__,_|_|_| |_|\__,_|_|    \_/ \___||___/\__|
+                                                 by INFOMANIHACK
+
+ Level        : 1 
+ Participant  : 
+ Submission date : DD MMMM. 2021 
+
+--------------------------------------------------------------------------------------------------------------------
+
+◉ Answer 1 : Authorized IP's related to SPF records (*) 
+  ⭗ Allowed IPv4 addresses (27 records) : 
+  → IP : 84.16.68.96
+  → IP : 84.16.68.94
+  → IP : 109.234.108.151
+  → IP : 109.234.108.152
+  → IP : 109.234.111.22
+  → IP : 84.16.68.109
+  → IP : 84.16.68.110
+  → IP : 84.16.68.111
+  → IP : 84.16.68.112
+  → CIDR : 45.157.188.8/29
+    ↳ Network range : 45.157.188.8 - 45.157.188.15
+    ↳ Network mask : 255.255.255.248 (8 hosts)
+  → CIDR : 185.125.25.8/29
+    ↳ Network range : 185.125.25.8 - 185.125.25.15
+    ↳ Network mask : 255.255.255.248 (8 hosts)
+  → CIDR : 83.166.143.168/29
+    ↳ Network range : 83.166.143.168 - 83.166.143.175
+    ↳ Network mask : 255.255.255.248 (8 hosts)
+  → CIDR : 84.16.66.168/29
+    ↳ Network range : 84.16.66.168 - 84.16.66.175
+    ↳ Network mask : 255.255.255.248 (8 hosts)
+  → CIDR : 185.125.25.16/29
+    ↳ Network range : 185.125.25.16 - 185.125.25.23
+    ↳ Network mask : 255.255.255.248 (8 hosts)
+  → CIDR : 45.157.188.16/29
+    ↳ Network range : 45.157.188.16 - 45.157.188.23
+    ↳ Network mask : 255.255.255.248 (8 hosts)
+  → CIDR : 84.16.66.176/29
+    ↳ Network range : 84.16.66.176 - 84.16.66.183
+    ↳ Network mask : 255.255.255.248 (8 hosts)
+  → CIDR : 83.166.143.176/29
+    ↳ Network range : 83.166.143.176 - 83.166.143.183
+    ↳ Network mask : 255.255.255.248 (8 hosts)
+  → CIDR : 199.255.192.0/22
+    ↳ Network range : 199.255.192.0 - 199.255.195.255
+    ↳ Network mask : 255.255.252.0 (1024 hosts)
+  → CIDR : 199.127.232.0/22
+    ↳ Network range : 199.127.232.0 - 199.127.235.255
+    ↳ Network mask : 255.255.252.0 (1024 hosts)
+  → CIDR : 54.240.0.0/18
+    ↳ Network range : 54.240.0.0 - 54.240.63.255
+    ↳ Network mask : 255.255.192.0 (16384 hosts)
+  → CIDR : 69.169.224.0/20
+    ↳ Network range : 69.169.224.0 - 69.169.239.255
+    ↳ Network mask : 255.255.240.0 (4096 hosts)
+  → CIDR : 23.249.208.0/20
+    ↳ Network range : 23.249.208.0 - 23.249.223.255
+    ↳ Network mask : 255.255.240.0 (4096 hosts)
+  → CIDR : 23.251.224.0/19
+    ↳ Network range : 23.251.224.0 - 23.251.255.255
+    ↳ Network mask : 255.255.224.0 (8192 hosts)
+  → CIDR : 76.223.176.0/20
+    ↳ Network range : 76.223.176.0 - 76.223.191.255
+    ↳ Network mask : 255.255.240.0 (4096 hosts)
+  → CIDR : 54.240.64.0/19
+    ↳ Network range : 54.240.64.0 - 54.240.95.255
+    ↳ Network mask : 255.255.224.0 (8192 hosts)
+  → CIDR : 54.240.96.0/19
+    ↳ Network range : 54.240.96.0 - 54.240.127.255
+    ↳ Network mask : 255.255.224.0 (8192 hosts)
+  → CIDR : 52.82.172.0/22
+    ↳ Network range : 52.82.172.0 - 52.82.175.255
+    ↳ Network mask : 255.255.252.0 (1024 hosts)
+  ⭗ Allowed IPv6 addresses (2 records) : 
+  → CIDR : 2001:1600:3:17::/64
+    ↳ Network range : 2001:1600:0003:0017:0000:0000:0000:0000 - 2001:1600:0003:0017:ffff:ffff:ffff:ffff
+   ↳ Subnet prefix : 2001:1600:3:17:0:0:0:0/64
+  → CIDR : 2001:1600:4:17::/64
+    ↳ Network range : 2001:1600:0004:0017:0000:0000:0000:0000 - 2001:1600:0004:0017:ffff:ffff:ffff:ffff
+   ↳ Subnet prefix : 2001:1600:4:17:0:0:0:0/64
+
+[!] To generate a listing of all IP addresses of some range, we can use 'namp'
+     ex. #nmap -sL -n 45.157.188.8/29 | awk '/Nmap scan report/{print $NF}' 
+     + '-6' like option for  IPv6 ranges
+
+(*)the procedure to generate this list of IPs related to SPF records is explained on './answer.sh' 
+
+--------------------------------------------------------------------------------------------------------------------
+
+◉ Answer 2 : Usual location of DNS information on a Linux system : 
+   ' #/etc/resolv.conf '  
+   ↳ resolver manual  : https://man7.org/linux/man-pages/man5/resolv.conf.5.html 
+
+/!\ But in some configurations, if no resolv.conf file exists, the resolver routines continue 
+    to search their direct path, which may include searching through /etc/hosts file or the NIS host map. 
+    ↳ ex.  - https://www.ibm.com/docs/en/aix/7.1?topic=formats-resolvconf-file-format-tcpip 
+
+--------------------------------------------------------------------------------------------------------------------
+
+◉ Answer 3 : Abuse mailbox of 185.181.161.0/24 range (*):  abuse@infomaniak.ch  
+
+(*) the email is extracted directly from the RIPE Database by the whois command #whois 185.181.161.0
+     and filtered by # | grep -o -P '(?<=abuse-mailbox:..  ' -details at #./scripts/answers.sh 
+
+--------------------------------------------------------------------------------------------------------------------
+
+◉ Answer 4 :  Favorite code editor(s): 
+   ' >  terminal : nano for small scripts and Vim for the rest  
+   ' >   w/ GUI  : VS code or Sublime Text  
+
+--------------------------------------------------------------------------------------------------------------------
+
+◉ A small script that solves the first part : 
+   ' >  the script is included inside #./scripts folder, use the language (bash, python, pearl, php) that suits you.  
+
+  /!\ it is a small script to answer the first Level of CandiHarvest, 
+      error/exception handling and testing on various environments are not verified.
+      *Dev. environment :  
+       - Debian Bullseye 
+       - bash v. 4.4-5 
+       - python3 v. 3.9.1 
+       - perl5 v. 5.32 
+       - PHP8, v. 8.0.7
+
+--------------------------------------------------------------------------------------------------------------------
+
